@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>БНКТМ - Игровое Телешоу</title>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Подключение шрифтов Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Мета-теги для адаптивного дизайна -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO мета-теги -->
+    <meta name="description" content="Официальный сайт игрового телешоу БНКТМ">
+    <meta name="keywords" content="БНКТМ, игровое шоу, игры, телешоу">
+    <!-- Open Graph теги для социальных сетей -->
+    <meta property="og:title" content="БНКТМ - Игровое Телешоу">
+    <meta property="og:description" content="Добро пожаловать на официальный сайт игрового телешоу БНКТМ!">
+    <meta property="og:image" content="images/og-image.jpg">
+    <!-- Фавикон -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <!-- Логотип -->
+        <a href="index.html" class="logo">БНКТМ</a>
+        <!-- Навигационное меню -->
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#partners">Партнеры</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <!-- Кнопка "Смотреть сейчас" -->
+        <a href="#watch" class="btn-watch">Смотреть сейчас</a>
+        <!-- Языковой переключатель -->
+        <div class="language-switcher">
+            <a href="?lang=ru">RU</a> | <a href="?lang=en">EN</a>
+        </div>
+        <!-- Мобильное меню (гамбургер) -->
+        <div class="menu-toggle">☰</div>
+    </header>
+
+    <div class="content">
+        <!-- Секция Home с слайдером -->
+        <section id="home" class="slider">
+            <div class="parallax-background"></div>
+            <!-- Слайды -->
+            <div class="slides">
+                <div class="slide active">
+                    <img src="images/slide1.jpg" alt="Слайд 1">
+                    <div class="caption">Добро пожаловать в БНКТМ</div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.jpg" alt="Слайд 2">
+                    <div class="caption">Ощути мир игр</div>
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.jpg" alt="Слайд 3">
+                    <div class="caption">Присоединяйся к нам</div>
+                </div>
+            </div>
+            <!-- Навигационные кнопки для слайдера -->
+            <div class="slider-nav">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+            <!-- Таймер до следующего выпуска -->
+            <div class="countdown">
+                <h3>До следующего выпуска осталось:</h3>
+                <div id="timer">
+                    <span id="days">00</span>д
+                    <span id="hours">00</span>ч
+                    <span id="minutes">00</span>м
+                    <span id="seconds">00</span>с
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Отзывов -->
+        <section id="testimonials" class="reveal">
+            <h2>Отзывы</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Лучшее игровое шоу, которое я когда-либо видел!"</p>
+                    <h3>- Иван Иванов</h3>
+                </div>
+                <div class="testimonial">
+                    <p>"Невероятные эмоции и впечатления!"</p>
+                    <h3>- Анна Петрова</h3>
+                </div>
+                <!-- Добавьте больше отзывов по необходимости -->
+            </div>
+        </section>
+
+        <!-- Секция Наша команда -->
+        <section id="team" class="reveal">
+            <h2>Наша команда</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="images/team1.jpg" alt="Владислав Александрович Харченко">
+                    <h3>Владислав Александрович Харченко</h3>
+                    <p>Главный продюсер и идейный вдохновитель проекта.</p>
+                </div>
+                <div class="member">
+                    <img src="images/team2.jpg" alt="Егор Витальевич Владов">
+                    <h3>Егор Витальевич Владов</h3>
+                    <p>Технический директор и ведущий программы.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Партнеры -->
+        <section id="partners" class="reveal">
+            <h2>Наши партнеры</h2>
+            <div class="partners">
+                <div class="partner">
+                    <img src="images/partner1.png" alt="Партнер 1">
+                    <h3>Компания А</h3>
+                    <p>Описание партнера и его вклада в проект.</p>
+                    <a href="https://partner1.com" target="_blank">Сайт партнера</a>
+                </div>
+                <div class="partner">
+                    <img src="images/partner2.png" alt="Партнер 2">
+                    <h3>Компания Б</h3>
+                    <p>Описание партнера и его вклада в проект.</p>
+                    <a href="https://partner2.com" target="_blank">Сайт партнера</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Галерея -->
+        <section id="gallery" class="reveal">
+            <h2>Галерея</h2>
+            <div class="gallery">
+                <a href="images/image1_large.jpg" data-lightbox="gallery"><img src="images/image1_large.jpg" alt="Изображение 1"></a>
+                <a href="images/image2_large.jpg" data-lightbox="gallery"><img src="images/image2_large.jpg" alt="Изображение 2"></a>
+                <!-- Добавьте больше изображений по необходимости -->
+            </div>
+        </section>
+
+        <!-- Секция Контакты -->
+        <section id="contact" class="reveal">
+            <h2>Свяжитесь с нами</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Ваш Email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <!-- Секция Подписка на новости -->
+        <section id="newsletter" class="reveal">
+            <div class="newsletter">
+                <h2>Подпишитесь на новости</h2>
+                <form id="newsletter-form">
+                    <input type="email" name="email" placeholder="Ваш Email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top">↑ Наверх</a>
+
+    <!-- Футер с социальными сетями -->
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="social-icon animated-icon fb">FB</a>
+            <a href="https://twitter.com" target="_blank" class="social-icon animated-icon tw">TW</a>
+            <a href="https://instagram.com" target="_blank" class="social-icon animated-icon ig">IG</a>
+            <a href="https://youtube.com" target="_blank" class="social-icon animated-icon yt">YT</a>
+        </div>
+        <p>&copy; 2024 БНКТМ. Все права защищены.</p>
+    </footer>
+
+    <!-- Кнопка установки PWA -->
+    <button id="install-button" class="install-button">Установить приложение</button>
+
+    <!-- Подключение скриптов -->
+    <script src="script.js"></script>
+    <!-- Подключение Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=ВАШ_API_КЛЮЧ&callback=initMap"></script>
+</body>
+</html>
